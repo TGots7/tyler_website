@@ -192,11 +192,64 @@ body, h1, h2, h3, h4, h5, h6 {
   width: 150px;
   height: 150px;
 }
-
+#resume-page {
+  margin-top: 50px;
+  background-color: white;
+  border: solid 2px black;
+}
+.resume-paragraph {
+  font-family: 'Slabo 27px', serif;
+  padding: 3px;
+  text-align: center;
+  border-bottom: solid 1px black;
+}
+.resume-header {
+  font-family: 'Slabo 27px', serif;
+  padding-top: 10px;
+  border-bottom: solid 1px black;
+}
+.splitter {
+  font-family: 'Slabo 27px', serif;
+  border-bottom: solid 1px black;
+  margin: 0px;
+  padding: 0px;
+}
+.splitter p {
+  font-family: 'Slabo 27px', serif;
+  margin: 0px;
+  padding: 0px;
+}
+.splitter-2 {
+  font-family: 'Slabo 27px', serif;
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  margin: 0px;
+  padding: 0px;
+}
+.splitter-2 p {
+  font-family: 'Slabo 27px', serif;
+  margin: 0px;
+  padding: 0px;
+}
+.job-paragraph {
+  font-family: 'Slabo 27px', serif;
+  text-align: left;
+  font-size: .75em;
+}
+.job-paragraph h6{
+  font-family: 'Slabo 27px', serif;
+  text-align: left;
+  font-size: 1.25em;
+}
 .space {
   height: 50px;
 }
-
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
 .section-heading {
   margin-bottom: 30px;
 }
