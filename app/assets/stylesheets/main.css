@@ -123,7 +123,9 @@ body, h1, h2, h3, h4, h5, h6 {
 .quote {
   margin-top: 20%;
 }
-
+.email {
+  margin: 5px;
+}
 /*.intro-divider {
   width: 400px;
   border-top: 1px solid #f8f8f8;
