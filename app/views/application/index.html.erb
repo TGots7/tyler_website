@@ -118,15 +118,15 @@
       <div class="container">
 
         <div class="row justify-content-center">
-          <div class="col-md-10">
+          <div class="col-md-6 email_box">
             <h2 class='text-center'>Sign up for email </h2>
               <div class="row justify-content-center">
-                <div class="col-md-4 text-center email">
+                <div class="col-md-4 email">
                   <%= form_for @user do |f| %>
                     <%= f.label :name %><br>
                     <%= f.text_field :name %><br>
                     <%= f.label :email %><br>
-                    <%= f.text_field :email %><br>
+                    <%= f.text_field :email %><br><br>
                     <%= f.submit %>
                   <% end %>
                 </div>
