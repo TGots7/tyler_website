@@ -11,46 +11,113 @@ body, h1, h2, h3, h4, h5, h6 {
 }
 
 .my-navbar {
-  background: rgba(255, 255, 255, 0.7) !important;
+  /*background: rgba(255, 255, 255, 0) !important;*/
+
   margin: 0px;
   padding: 0px;
-  color: black;
+  color: white;
   height: 45px;
+
+    background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0),
+    ) !important;
 }
 a.nav-link {
-  color: black !important;
+  color: rgba(0, 0, 0, 1) !important;
+  padding-top: 5%;
 }
 .sign {
-  padding-top: 7px;
+  padding-top: 10px;
 }
 
 .fa-linkedin {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 1);
   padding-right: 5px;
 }
 .fa-twitter {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 1);
   padding-right: 5px;
 }
 .fa-instagram {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 1);
   padding-right: 5px;
 }
 .fa-github {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 1);
   padding-right: 5px;
 }
-
+/*.my-container {
+    position: relative;
+    background: #5C97FF;
+    overflow: hidden;
+}
+You could use :after - it doesn't really matter
+.my-container:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.6;
+    background-image: url('http://placekitten.com/1500/1000');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+*/
 .intro-header {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
   color: #f8f8f8;
-  background: url('tyler/background_wedding.jpg') no-repeat center center;
-  background-size: cover;
   height: auto;
+  /*background: url('tyler/background_wedding.jpg') no-repeat center center;
+  background-size: cover;*/
+  background: 
+    /* top, transparent red */ 
+    /*linear-gradient(
+      rgba(0, 0, 0, 0.9), 
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),*/
+    /* bottom, image */
+    url('tyler/background_wedding.jpg') no-repeat center center;
+    background-size: cover;
+    /*filter: brightness(0.9);
+    // Browser Specific
+    -webkit-filter: brightness(0.9);
+    -moz-filter: brightness(0.9);
+    -o-filter: brightness(0.9);
+    -ms-filter: brightness(0.9);*/
 }
 
+/*.dark-cover {
+  position: absolute;
+}
+.dark-cover:after {
+  background-color: rgba(0,0,0,0.5);
+}*/
 .intro-message {
   position: relative;
   padding-top: 20%;
@@ -67,6 +134,7 @@ a.nav-link {
   text-align: center;
   position: relative;
   top: 100px;
+  font-family: 'Ruda', sans-serif;
 }
 
 .the-ul {
@@ -76,7 +144,10 @@ a.nav-link {
 
 /* Float Shadow */
 .hvr-float-shadow {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  font-weight: bolder;
+  border-color: black;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -123,13 +194,71 @@ a.nav-link {
 }
 
 .name {
-  background-color: rgba(0, 0, 0, 0.7);
+  /*background-color: rgba(0, 0, 0, 0);*/
+  font-family: 'Alegreya Sans', sans-serif;
+  color: black;
+  font-size: 1.1em;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px white;*/
+  border-radius: 3px;
   padding: 3px;
   letter-spacing: 3px;
 }
-.quote {
-  margin-top: 20%;
+/*///////////////BLOCK QUOTE//////////////////*/
+blockquote {
+font-family: Georgia, serif;
+font-size: 18px;
+font-style: italic;
+width: auto;
+margin: 0.25em 0;
+margin-top: 7%;
+padding: 0.35em 40px;
+line-height: 1.45;
+position: relative;
+color: #383838;
 }
+
+blockquote:before {
+display: block;
+padding-left: 10px;
+content: "\201C";
+font-size: 80px;
+position: absolute;
+left: -20px;
+top: -20px;
+color: #7a7a7a;
+}
+
+blockquote cite {
+color: #999999;
+font-size: 14px;
+display: block;
+margin-top: 5px;
+}
+ 
+blockquote cite:before {
+content: "\2014 \2009";
+}
+/*//////////////////////////////////////////////*/
+.quote {
+  /*background: url("tyler/quotes.png") center top;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;*/
+  /*margin-top: 5%;*/
+  box-shadow: inset 0 0 2em 2em #f4f4f4;
+  /*background: red; padding: 2em */
+  background-color: rgba(200,200,200,0.8);
+}
+.quote-2 {
+  /*background: url("tyler/quotes.png") center;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;*/
+  box-shadow: inset 0 0 2em 2em #FAFAFA;
+  background-color: rgba(200,200,200,0.8);
+  margin-top: 2%;
+}
+/*background: #ffffff url("img_tree.png") no-repeat right top;
+    margin-right: 200px;*/
+
 .email {
   margin: 5px;
 }
@@ -175,15 +304,16 @@ a.nav-link {
 
 .network-name {
   text-transform: uppercase;
+  /*font-family: 'Alegreya Sans', sans-serif;*/
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 900;
   letter-spacing: 2px;
 }
 
 .content-section-a {
   padding: 50px 0;
-  background-color: #f8f8f8;
   height: auto;
+  background: #f4f4f4;
 }
 #about_tyler {
   margin-top: 1%
@@ -194,6 +324,7 @@ a.nav-link {
   border-top: 1px solid #e7e7e7;
   border-bottom: 1px solid #e7e7e7;
   height: auto;
+  background: rgb(250,250,250);
 }
 .gotto-marry {
   background-image: url('tyler/gottomarrygrace.png');
@@ -207,6 +338,47 @@ a.nav-link {
   width: 150px;
   height: 150px;
   box-shadow: 0px 4px 3px #888888;
+  filter: brightness(0.5);
+    // Browser Specific
+    -webkit-filter: brightness(0.6);
+    -moz-filter: brightness(0.6);
+    -o-filter: brightness(0.6);
+    -ms-filter: brightness(0.6);
+}
+.gotto-marry:hover {
+  filter: brightness(0.9);
+    // Browser Specific
+    -webkit-filter: brightness(0.9);
+    -moz-filter: brightness(0.9);
+    -o-filter: brightness(0.9);
+    -ms-filter: brightness(0.9);
+}
+.wish-list {
+  background-image: url('tyler/wish.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  /*border-width: 5px;
+  border-style: solid;
+  border-color: rgba(255,255,255,0.0);*/
+  margin: 4px;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0px 4px 3px #888888;
+  filter: brightness(0.7);
+    // Browser Specific
+    -webkit-filter: brightness(0.7);
+    -moz-filter: brightness(0.7);
+    -o-filter: brightness(0.7);
+    -ms-filter: brightness(0.7);
+}
+.wish-list:hover {
+  filter: brightness(1);
+    // Browser Specific
+    -webkit-filter: brightness(1);
+    -moz-filter: brightness(1);
+    -o-filter: brightness(1);
+    -ms-filter: brightness(1);
 }
 #resume-page {
   margin-top: 50px;
@@ -289,7 +461,7 @@ a.nav-link {
   font-size: 3em;
 }
 
-.banner ul {
+.banner p {
   margin-bottom: 0;
 }
 

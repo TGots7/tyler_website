@@ -1,7 +1,9 @@
 
     
     <!-- Header -->
-    <header class="intro-header">
+
+    <header class="intro-header dark-cover">
+      
       <div class="container">
       <div class="row justify-content-center text-center">
         <div class="intro-message">
@@ -27,23 +29,26 @@
               <!-- </li> -->
             <!-- </ul> -->
           </div>
+          </div>
         </div>
       </div>
+      
     </header>
 
     <!-- Page Content -->
     <section class="content-section-a" id="content-section-a">
 
       <div class="container">
-        <div class="row justify-content-center text-center">
-          <div class="col-md-8" id="about_tyler">
+        <div class="row justify-content-center">
+          <div class="col-lg-8" id="about_tyler">
             <h2 class="section-heading text-center">Done with this for today???</h2>
-            <p class="lead">This is the life story of Tyler Gotto, how he got to where he is today, and where he is hoping to go from here and what he is hopong to do! He played hockey, he is from Canada, he went to college in the USA, got a Marketing degree then payed 7 years of professional hockey in Europe. He travelled a lot and met a lot of cool people and brodened his horizon internationally and cuturally. Now he and his new wife have moved to New York City, where he is looking to contine his carrer in marketing and web development.<br>
+            <p class="lead">
             This is the life story of Tyler Gotto, how he got to where he is today, and where he is hoping to go from here and what he is hopong to do! He played hockey, he is from Canada, he went to college in the USA, got a Marketing degree then payed 7 years of professional hockey in Europe. He travelled a lot and met a lot of cool people and brodened his horizon internationally and cuturally. Now he and his new wife have moved to New York City, where he is looking to contine his carrer in marketing and web development. </p>
           </div>
-          <div class="col-md-4">
-            <p class="quote">“The best time to plant a tree was 20 years ago. The second best time is now.”<br> – Chinese Proverb</p>
-          </div>
+          <div class="col-lg-4 quote">
+            <blockquote>
+            The best time to plant a tree was 20 years ago. The second best time is now. The best time to plant a tree was 20 years ago. The second best time is now.The best time to plant a tree was 20 years ago. <cite> Chinese Proverb </cite>
+          </blockquote>
         </div>
 
       </div>
@@ -56,7 +61,7 @@
         <div class="row justify-content-center text-center">
           <div class="col-md-6">
             <h2 class="section-heading">Web Development</h2>
-            <p class="lead">This is the life story of Tyler Gotto, how he got to where he is today, and where he is hoping to go from here and what he is hopong to do! He played hockey, he is from Canada, he went to college in the USA, got a Marketing degree then payed 7 years of professional hockey in Europe. He travelled a lot and met a lot of cool people and brodened his horizon internationally and cuturally. Now he and his new wife have moved to New York City, where he is looking to contine his carrer in marketing and web development.</p>
+            <p class="lead">My love for web development has expotentially grown over the past years. The realization of how many bad websites and apps there are on the internet, and all the missed opportunities they encompass reignited my passed interest in creating engaging interactive web projects. I am excited to create beautiful work that is also easy and motivating to enage with for the user. The quote below I feel blends perfectly into the web design world, an individual shouldnt have to think to use your product they should just have the pleasur of doing so. </p>
             </div>
 
             <div class="col-md-6">
@@ -65,7 +70,7 @@
                 <div class="col gotto-marry"><a href = "#"></a></div>
                 
                
-                <div class="col gotto-marry"></div>
+                <div class="col wish-list"></div>
                 
                 
                 <div class="col gotto-marry"></div>
@@ -86,9 +91,10 @@
         </div>
 
         <div class="row justify-content-center">
-          <div class="col-sm-10 text-center">
-            <p class="-2">“The best time to plant a tree was 20 years ago. The second best time is now.”<br> – Chinese Proverb</p>
-          </div>
+          <div class="col-sm-6 text-center quote-2">
+            <blockquote>“Any product that needs a manual to work is broken."
+                  <cite> Elon Musk</cite>
+          </blockquote>
         </div>
 
 
@@ -102,20 +108,6 @@
 
       <div class="container">
 
-        <div class="row">
-          <div class="col-lg-5 ml-auto">
-            <hr class="section-heading-spacer">
-            <div class="clearfix"></div>
-            <h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2>
-            <p class="lead">This template features the 'Lato' font, part of the
-              <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as
-              <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
-          </div>
-          <div class="col-lg-5 mr-auto ">
-            <img class="img-fluid" src="img/phones.png" alt="">
-          </div>
-        </div>
-
       </div>
       <!-- /.container -->
 
@@ -125,23 +117,29 @@
     <aside class="banner">
 
       <div class="container">
-
-        <div class="row justify-content-center">
-          <div class="col-md-6 email_box">
-            <h2 class='text-center'>Sign up for email </h2>
-              <div class="row justify-content-center">
-                <div class="col-md-4 email">
-                  <%= form_for @user do |f| %>
-                    <%= f.label :name %><br>
-                    <%= f.text_field :name %><br>
-                    <%= f.label :email %><br>
-                    <%= f.text_field :email %><br><br>
-                    <%= f.submit %>
-                  <% end %>
-                </div>
+      <div class="row">
+        <h2 class="text-center">My feelings towards Marketing</h2>
+        <p>B2C = Content create to make an emotional connection leads to brand awarness and interaction</p>
+        <p>B2B = The customer experience 
+        I am fascinated by staying on top of the newest technologies, I am myself an early adopter so I love using those technologies to advance my marketing strategies. My interests are in mobile aspects, video content, emotional connection. 
+        </p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6 email_box">
+          <h2 class='text-center'>CALL TO ACTION </h2>
+            <div class="row justify-content-center">
+              <div class="col-md-4 email">
+                <%= form_for @user do |f| %>
+                  <%= f.label :name %><br>
+                  <%= f.text_field :name %><br>
+                  <%= f.label :email %><br>
+                  <%= f.text_field :email %><br><br>
+                  <%= f.submit "STRATEGIC BUTTON" %>
+                <% end %>
               </div>
-          </div>
+            </div>
         </div>
+      </div>
       <!-- /.container -->
 
     </aside>
@@ -151,7 +149,7 @@
     <footer>
       <div class="container">
         <div class="row justify-content-center text-center">
-          <div class="col-5">
+          <div class="col-md-5">
             <ul class="list-inline">
               <li class="list-inline-item">
                 <a href="#">Home</a>

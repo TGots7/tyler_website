@@ -8,4 +8,9 @@ class ApplicationController < ActionController::Base
   def resume
   	
   end
+
+  def email
+  	
+  end
+
 end
