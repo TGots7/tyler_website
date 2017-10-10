@@ -4,15 +4,18 @@ body, html {
   height: 100%;
   background: darkgrey;
 }
-
-body, h1, h2, h3, h4, h5, h6 {
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Permanent Marker', cursive;
   font-weight: 700;
 }
 
 .my-navbar {
   /*background: rgba(255, 255, 255, 0) !important;*/
-
+  font-family: 'Roboto', sans-serif;
   margin: 0px;
   padding: 0px;
   color: white;
@@ -133,13 +136,13 @@ You could use :after - it doesn't really matter
   font-size: 3em;
   text-align: center;
   position: relative;
-  top: 100px;
-  font-family: 'Ruda', sans-serif;
+  top: 200px;
+  font-family: 'Permanent Marker', cursive;
 }
 
 .the-ul {
   position: relative;
-  top: 110px;
+  top: 200px;
 }
 
 /* Float Shadow */
@@ -194,10 +197,10 @@ You could use :after - it doesn't really matter
 }
 
 .name {
-  /*background-color: rgba(0, 0, 0, 0);*/
-  font-family: 'Alegreya Sans', sans-serif;
+  /*background-color: rgba(255, 255, 255, 0.2);*/
+  font-family: 'Permanent Marker', cursive;
   color: black;
-  font-size: 1.1em;
+  font-size: 1.3em;
   /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px white;*/
   border-radius: 3px;
   padding: 3px;
@@ -311,6 +314,7 @@ content: "\2014 \2009";
 }
 
 .content-section-a {
+  font-family: 'Permanent Marker', cursive;
   padding: 50px 0;
   height: auto;
   background: #f4f4f4;
@@ -318,7 +322,11 @@ content: "\2014 \2009";
 #about_tyler {
   margin-top: 1%
 }
-
+.lead {
+  font-family: 'Roboto', sans-serif;
+  padding: 5px;
+  font-size: 1em;
+}
 .content-section-b {
   padding: 50px 0;
   border-top: 1px solid #e7e7e7;
@@ -338,20 +346,21 @@ content: "\2014 \2009";
   width: 150px;
   height: 150px;
   box-shadow: 0px 4px 3px #888888;
-  filter: brightness(0.5);
+  filter: brightness(0.7);
     // Browser Specific
-    -webkit-filter: brightness(0.6);
-    -moz-filter: brightness(0.6);
-    -o-filter: brightness(0.6);
-    -ms-filter: brightness(0.6);
+    -webkit-filter: brightness(0.7);
+    -moz-filter: brightness(0.7);
+    -o-filter: brightness(0.7);
+    -ms-filter: brightness(0.7);
 }
 .gotto-marry:hover {
-  filter: brightness(0.9);
+  cursor: pointer;
+  filter: brightness(1.1);
     // Browser Specific
-    -webkit-filter: brightness(0.9);
-    -moz-filter: brightness(0.9);
-    -o-filter: brightness(0.9);
-    -ms-filter: brightness(0.9);
+    -webkit-filter: brightness(1.1);
+    -moz-filter: brightness(1.1);
+    -o-filter: brightness(1.1);
+    -ms-filter: brightness(1.1);
 }
 .wish-list {
   background-image: url('tyler/wish.png');
@@ -373,12 +382,13 @@ content: "\2014 \2009";
     -ms-filter: brightness(0.7);
 }
 .wish-list:hover {
-  filter: brightness(1);
+  cursor: crosshair;
+  filter: brightness(1.1);
     // Browser Specific
-    -webkit-filter: brightness(1);
-    -moz-filter: brightness(1);
-    -o-filter: brightness(1);
-    -ms-filter: brightness(1);
+    -webkit-filter: brightness(1.1);
+    -moz-filter: brightness(1.1);
+    -o-filter: brightness(1.1);
+    -ms-filter: brightness(1.1);
 }
 #resume-page {
   margin-top: 50px;
@@ -466,6 +476,7 @@ content: "\2014 \2009";
 }
 
 .banner-social-buttons {
+  font-family: 'Roboto', sans-serif;
   float: right;
   margin-top: 0;
 }
@@ -490,6 +501,14 @@ content: "\2014 \2009";
   }
   ul.banner-social-buttons>li:last-child {
     margin-bottom: 0;
+  }
+  .intro-message>h1 {
+  /*font-size: 3em;*/
+  top: 100px;
+  }
+
+  .the-ul {
+    top: 100px;
   }
 }
 

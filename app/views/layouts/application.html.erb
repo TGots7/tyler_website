@@ -2,8 +2,9 @@
 <html>
   <head>
     <title>Tyler // New Age Marketer</title>
+
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Ruda:700' %>
+    <%= stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Permanent+Marker|Roboto' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
@@ -43,5 +44,15 @@
   	
     <%= yield %>
     
+    <script>
+      $(document).ready(function(){
+            $('.wish-list').click(function(){
+              window.open('https://twitter.com/TGots7?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor', "_blank");
+          })
+            $('.gotto-marry').click(function(){
+              window.open('http://www.gottomarrygrace.com', "_blank");
+          })
+      });
+</script>
   </body>
 </html> 
