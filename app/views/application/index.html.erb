@@ -41,9 +41,13 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8" id="about_tyler">
-            <h2 class="section-heading text-center">Up to Now</h2>
+            <h2 class="section-heading text-center">Up till Now</h2>
             <p class="lead">
-            This is the life story of Tyler Gotto, how he got to where he is today, and where he is hoping to go from here and what he is hopong to do! He played hockey, he is from Canada, he went to college in the USA, got a Marketing degree then payed 7 years of professional hockey in Europe. He travelled a lot and met a lot of cool people and brodened his horizon internationally and cuturally. Now he and his new wife have moved to New York City, where he is looking to contine his carrer in marketing and web development. </p>
+            I am a marketing and technlology fan. I get excited over how well made an emotional Budwiser Superbowl Commercial was or how a Nike commercial sucked me in and now I have to buy a new pair of Nike's. I am an early adopter, especially when it comes to technology and I am constantly looking forward to the next big trend which will shape our lives. </p>
+            <h5 class="text-center">How I got here</h5>
+            <p class="lead">
+            Being a professioanl hockey player who worked in marketing in both North America and Europe I have gained so much from my experiences interacting with people of differenet cultures, public speaking at events. Hockey also instilled in me a desire to excel at all endeavors I intake. As well I have a life long history of striving in a team environment and being a leader who helps drive my team to surpass our goals. 
+            </p>
           </div>
           <div class="col-lg-4 quote">
             <blockquote>
@@ -56,16 +60,44 @@
     </section>
 
     <section class="content-section-b" id="content-section-b">
+     <div class="container">
+      <div class="row">
+        <h2 class="text-center">My feelings towards Marketing</h2>
+        <p> 
+        </p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4 email_box">
+          <h2 class='text-center'>CALL TO ACTION </h2>
+            <div class="row justify-content-center">
+              <div class="email text-center">
+                <%= form_for @user do |f| %> 
+                  <%= f.text_field :name, :placeholder => "Name", :class => "input-box" %><br>
+                  <%= f.text_field :email, :placeholder => "Email", :class => "input-box" %><br>
+                  <%= f.submit "STRATEGIC BUTTON", :class => "email-button" %>
+                <% end %>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+      
+      <!-- /.container -->
+
+    </section>
+    <!-- /.content-section-b -->
+
+    <section class="content-section-c" id="content-section-c">
 
       <div class="container">
         <div class="row justify-content-center text-center">
           <div class="col-md-6">
-            <h2 class="section-heading">Web Development</h2>
+            <h2 class="section-heading-c">Web Development</h2>
           </div>
         </div>
           <div class="row justify-content-center text-center">
             <div class="col-md-6">
-              <p class="lead">My love for web development has expotentially grown over the past years. The realization of how many bad websites and apps there are on the internet, and all the missed opportunities they encompass reignited my passed interest in creating engaging interactive web projects. I am excited to create beautiful work that is also easy and motivating to enage with for the user. The quote below I feel blends perfectly into the web design world, an individual shouldnt have to think to use your product they should just have the pleasur of doing so. </p>
+              <p class="lead">My love for web development has expotentially grown over the past years. The realization of how many bad websites and apps there are on the internet, and all the missed opportunities they encompass reignited my passed interest in creating engaging interactive web projects. I am excited to create beautiful work that is also easy and motivating to enage with for the user. The quote below I feel blends perfectly into the web design world, an individual shouldn't have to think to use your product they should just have the pleasure of doing so. </p>
             </div>
 
             <div class="col-md-6">
@@ -96,7 +128,7 @@
 
         <div class="row justify-content-center">
           <div class="col-sm-6 text-center quote-2">
-            <blockquote>“Any product that needs a manual to work is broken."
+            <blockquote class="margin-override">“Any product that needs a manual to work is broken."
                   <cite> Elon Musk</cite>
           </blockquote>
         </div>
@@ -106,46 +138,10 @@
       <!-- /.container -->
 
     </section>
-    <!-- /.content-section-b -->
-
-    <section class="content-section-c" id="content-section-c">
-
-      <div class="container">
-
-      </div>
-      <!-- /.container -->
-
-    </section>
     <!-- /.content-section-a -->
 
     <aside class="banner">
-
-      <div class="container">
-      <div class="row">
-        <h2 class="text-center">My feelings towards Marketing</h2>
-        <p>B2C = Content create to make an emotional connection leads to brand awarness and interaction</p>
-        <p>B2B = The customer experience 
-        I am fascinated by staying on top of the newest technologies, I am myself an early adopter so I love using those technologies to advance my marketing strategies. My interests are in mobile aspects, video content, emotional connection. 
-        </p>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-6 email_box">
-          <h2 class='text-center'>CALL TO ACTION </h2>
-            <div class="row justify-content-center">
-              <div class="col-md-4 email">
-                <%= form_for @user do |f| %>
-                  <%= f.label :name %><br>
-                  <%= f.text_field :name %><br>
-                  <%= f.label :email %><br>
-                  <%= f.text_field :email %><br><br>
-                  <%= f.submit "STRATEGIC BUTTON" %>
-                <% end %>
-              </div>
-            </div>
-        </div>
-      </div>
       <!-- /.container -->
-
     </aside>
     <!-- /.banner -->
 

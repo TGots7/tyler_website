@@ -24,15 +24,17 @@ class UsersController < ApplicationController
   # POST /users
   # POST /users.json
   def create
-    @user = User.new(user_params)
-
-      if @user.save
-        UserMailer.welcome_email(@user).deliver
-        redirect_to '/'
-      else
-        redirect_to resume_path
-      end
-    
+    if params[:user][:name] == "" || params[:user][:email] == ""
+      redirect_to resume_path
+    else
+      @user = User.new(user_params)
+        if @user.save
+          UserMailer.welcome_email(@user).deliver
+          redirect_to '/'
+        else
+          redirect_to resume_path
+        end
+    end  
   end
 
   # PATCH/PUT /users/1
@@ -67,6 +69,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:name, :email, :login)
+      params.require(:user).permit(:name, :email)
     end
 end
