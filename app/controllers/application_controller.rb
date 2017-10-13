@@ -13,4 +13,8 @@ class ApplicationController < ActionController::Base
   	
   end
 
+  def mobile
+
+  end
+
 end

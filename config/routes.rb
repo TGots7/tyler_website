@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/' => 'application#index'
   get '/resume' => 'application#resume'
   get '/email' => 'application#email'
+  get '/mobile' => 'application#mobile'
 end
