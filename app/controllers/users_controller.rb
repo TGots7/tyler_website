@@ -25,14 +25,14 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     if params[:user][:name] == "" || params[:user][:email] == ""
-      redirect_to resume_path
+      render 'application/fail', :layout => false
     else
       @user = User.new(user_params)
         if @user.save
           UserMailer.mobile_email(@user).deliver
-          redirect_to '/'
+          render 'application/success', :layout => false
         else
-          redirect_to resume_path
+          render 'application/fail', :layout => false
         end
     end  
   end
