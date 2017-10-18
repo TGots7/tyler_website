@@ -296,6 +296,9 @@ content: "\2014 \2009";
   padding: 5px;
   margin: 3px;
 }
+.email-button:hover {
+  cursor: pointer;
+  }
 .input-box {
   margin: 1px;
   box-shadow: 0px 1px 1px #888888;
@@ -392,6 +395,22 @@ content: "\2014 \2009";
     -o-filter: brightness(0.7);
     -ms-filter: brightness(0.7);
 }
+.lang-title {
+  padding-top: 70%;
+  color: white;
+}
+.adobe {
+  padding-top: 80%;
+  color: white;
+}
+.js_jquery {
+  padding-top: 70%;
+  color: white;
+}
+.ror{
+  padding-top: 70%;
+  color: white;
+}
 .gotto-marry:hover {
   cursor: pointer;
   filter: brightness(1.1);
@@ -402,7 +421,7 @@ content: "\2014 \2009";
     -ms-filter: brightness(1.1);
 }
 .wish-list {
-  background-image: url('tyler/wish.png');
+  background-image: url('tyler/wishfinal.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -428,6 +447,38 @@ content: "\2014 \2009";
     -moz-filter: brightness(1.1);
     -o-filter: brightness(1.1);
     -ms-filter: brightness(1.1);
+}
+.recipe {
+  background-image: url('tyler/recipes.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  /*border-width: 5px;
+  border-style: solid;
+  border-color: rgba(255,255,255,0.0);*/
+  margin: 4px;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0px 4px 3px #888888;
+  -webkit-transition:  height 1s;
+  filter: brightness(0.7);
+    // Browser Specific
+    -webkit-filter: brightness(0.7);
+    -moz-filter: brightness(0.7);
+    -o-filter: brightness(0.7);
+    -ms-filter: brightness(0.7);
+}
+.recipe:hover {
+  cursor: crosshair;
+  filter: brightness(1.1);
+    // Browser Specific
+    -webkit-filter: brightness(1.1);
+    -moz-filter: brightness(1.1);
+    -o-filter: brightness(1.1);
+    -ms-filter: brightness(1.1);
+}
+.ror:hover {
+  color: black;
 }
 .gif {
   background-image: url('tyler/tytycoffee.gif');
@@ -488,6 +539,9 @@ content: "\2014 \2009";
     -moz-filter: brightness(1.1);
     -o-filter: brightness(1.1);
     -ms-filter: brightness(1.1);
+}
+.js_jquery:hover {
+  color: black;
 }
 #resume-page {
   margin-top: 50px;
@@ -560,9 +614,9 @@ content: "\2014 \2009";
 }
 
 .banner {
-  padding: 100px 0;
+  padding: 30px 0;
   color: #f8f8f8;
-  background: url(../img/banner-bg.jpg) no-repeat center center;
+  /*background: url(../img/banner-bg.jpg) no-repeat center center;*/
   background-size: cover;
 }
 
