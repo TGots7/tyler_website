@@ -503,12 +503,12 @@ content: "\2014 \2009";
 .gif:hover {
   height: 260px;
   cursor: crosshair;
-  filter: brightness(1.1);
+  filter: brightness(1);
     // Browser Specific
-    -webkit-filter: brightness(1.1);
-    -moz-filter: brightness(1.1);
-    -o-filter: brightness(1.1);
-    -ms-filter: brightness(1.1);
+    -webkit-filter: brightness(1);
+    -moz-filter: brightness(1);
+    -o-filter: brightness(1);
+    -ms-filter: brightness(1);
 }
 .storypage {
   background-image: url('tyler/storypage.jpg');
