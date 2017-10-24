@@ -359,7 +359,7 @@ content: "\2014 \2009";
 }
 .lead {
   font-family: 'Roboto', sans-serif;
-  padding: 5px;
+  padding: 10px;
   font-size: 1em;
 }
 .content-section-b {
@@ -406,6 +406,13 @@ content: "\2014 \2009";
 .js_jquery {
   padding-top: 70%;
   color: white;
+}
+.email-square-title {
+  padding-top: 70%;
+  color: white;
+}
+.email-square-title:hover {
+  color: black;
 }
 .ror{
   padding-top: 70%;
@@ -479,6 +486,34 @@ content: "\2014 \2009";
 }
 .ror:hover {
   color: black;
+}
+.email-square {
+  background-image: url('tyler/tylergottoname.gif');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  /*border-width: 5px;
+  border-style: solid;
+  border-color: rgba(255,255,255,0.0);*/
+  margin: 4px;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0px 4px 3px #888888;
+  filter: brightness(0.7);
+    // Browser Specific
+    -webkit-filter: brightness(0.7);
+    -moz-filter: brightness(0.7);
+    -o-filter: brightness(0.7);
+    -ms-filter: brightness(0.7);
+}
+.email-square:hover {
+  cursor: crosshair;
+  filter: brightness(1.1);
+    // Browser Specific
+    -webkit-filter: brightness(1.1);
+    -moz-filter: brightness(1.1);
+    -o-filter: brightness(1.1);
+    -ms-filter: brightness(1.1);
 }
 .gif {
   background-image: url('tyler/tytycoffee.gif');
