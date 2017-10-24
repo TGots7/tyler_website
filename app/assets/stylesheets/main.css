@@ -275,6 +275,8 @@ content: "\2014 \2009";
 }
 .email_box {
   /*border: solid 2px black;*/
+  margin: 20px;
+  margin-top: 20%;
   
   background-color: rgb(235,235,235);
   box-shadow: 0px 4px 3px #888888;
