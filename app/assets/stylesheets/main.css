@@ -708,9 +708,14 @@ content: "\2014 \2009";
 
 footer {
   padding: 50px 0;
-  background-color: #f8f8f8;
+  /*background-color: #f8f8f8;*/
+  background:url('tyler/brikbg.jpeg') no-repeat center center;
+    background-size: cover;
+    color: black;
 }
 
 p.copyright {
   margin: 15px 0 0;
+  color: black;
+  font-weight: 900;
 }
