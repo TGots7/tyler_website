@@ -106,7 +106,7 @@ You could use :after - it doesn't really matter
       rgba(0, 0, 0, 0.1)
     ),*/
     /* bottom, image */
-    url('tyler/background_wedding.jpg') no-repeat center center;
+    image-url('tyler/background_wedding.jpg') no-repeat center center;
     background-size: cover;
     /*filter: brightness(0.9);
     // Browser Specific
@@ -386,7 +386,7 @@ p.lead {
   background: #f4f4f4;
 }
 .gotto-marry {
-  background-image: url('tyler/gottomarrygrace.png');
+  background-image: image-url('tyler/gottomarrygrace.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -437,7 +437,7 @@ p.lead {
     -ms-filter: brightness(1.1);
 }
 .wish-list {
-  background-image: url('tyler/superwishfinal.png');
+  background-image: image-url('tyler/superwishfinal.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -465,7 +465,7 @@ p.lead {
     -ms-filter: brightness(1.1);
 }
 .recipe {
-  background-image: url('tyler/recipesfinal.jpg');
+  background-image: image-url('tyler/recipesfinal.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -497,7 +497,7 @@ p.lead {
   color: black;
 }
 .email-square {
-  background-image: url('tyler/TRICANINFOGRAPHIC.png');
+  background-image: image-url('tyler/TRICANINFOGRAPHIC.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -527,7 +527,7 @@ p.lead {
     -ms-filter: brightness(1);
 }
 .gif {
-  background-image: url('tyler/tytycoffee.gif');
+  background-image: image-url('tyler/tytycoffee.gif');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -557,7 +557,7 @@ p.lead {
     -ms-filter: brightness(1);
 }
 .storypage {
-  background-image: url('tyler/storypage.jpg');
+  background-image: image-url('tyler/storypage.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
@@ -716,7 +716,7 @@ p.lead {
 footer {
   padding: 50px 0;
   /*background-color: #f8f8f8;*/
-  background:url('tyler/brikbg.jpeg') no-repeat center center;
+  background: image-url('tyler/brikbg.jpeg') no-repeat center center;
     background-size: cover;
     color: black;
 }
