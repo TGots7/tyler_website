@@ -2,7 +2,7 @@
 body, html {
   width: 100%;
   height: 100%;
-  background: darkgrey;
+  background: white;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -724,3 +724,8 @@ p.copyright {
   color: black;
   font-weight: 900;
 }
+
+.contact-row {
+  margin-top: 60px;
+}
+
