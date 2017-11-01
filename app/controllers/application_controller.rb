@@ -5,16 +5,16 @@ class ApplicationController < ActionController::Base
   	@user = User.new
   end
 
-  def resume
-  	
+  def resume	
   end
 
-  def email
-  	
+  def email	
   end
 
   def mobile
+  end
 
+  def contact
   end
 
 end

@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/resume' => 'application#resume'
   get '/email' => 'application#email'
   get '/mobile' => 'application#mobile'
+  get '/contact' => 'application#contact'
 end
