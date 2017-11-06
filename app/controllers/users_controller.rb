@@ -31,7 +31,7 @@ class UsersController < ApplicationController
       @email = params[:user][:email]
       # @user = User.new(user_params)
       #   if @user.save
-          UserMailer.mobile_email(nameOF, email).deliver
+          UserMailer.mobile_email(@nameOF, @email).deliver
           render 'application/success', :layout => false
         # else
         #   render 'application/fail', :layout => false
