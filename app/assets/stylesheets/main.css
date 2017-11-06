@@ -465,7 +465,7 @@ p.lead {
     -ms-filter: brightness(1.1);
 }
 .recipe {
-  background-image: image-url('tyler/recipesfinal.jpg');
+  background-image: image-url('tyler/recipesfinal.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
