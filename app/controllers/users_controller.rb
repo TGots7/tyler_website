@@ -27,9 +27,11 @@ class UsersController < ApplicationController
     if params[:user][:name] == "" || params[:user][:email] == ""
       render 'application/fail', :layout => false
     else
+      email = params[:user][:name] 
+      nameOF = params[:user][:email]
       # @user = User.new(user_params)
       #   if @user.save
-          UserMailer.mobile_email("tylergotto17@gmail.com").deliver
+          UserMailer.mobile_email(nameOF, email).deliver
           render 'application/success', :layout => false
         # else
         #   render 'application/fail', :layout => false
