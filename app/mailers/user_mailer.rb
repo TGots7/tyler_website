@@ -10,7 +10,7 @@ class UserMailer < ApplicationMailer
 	 def mobile_email(nameOF, email)
 	    @user = nameOF
 	    # @url  = "http://example.com/login"
-	    mail(:to => email, :subject => "Thanks for checking out my site!" )
+	    mail(:to => email, :subject => "Hi, #{nameOF}" )
 	  end
 	
 end
