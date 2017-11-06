@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit, :update, :destroy]
+  #before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   # GET /users
   # GET /users.json
@@ -29,7 +29,7 @@ class UsersController < ApplicationController
     else
       @user = User.new(user_params)
         if @user.save
-          UserMailer.mobile_email(@user).deliver
+          UserMailer.mobile_email("tylergotto17@gmail.com").deliver
           render 'application/success', :layout => false
         else
           render 'application/fail', :layout => false
