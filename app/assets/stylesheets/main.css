@@ -741,3 +741,14 @@ p.copyright {
 .spacer {
   margin-top: 30px;
 }
+#call_to_action {
+  padding-top: 15px;
+  color: black;
+  font-family: 'Libre Baskerville', serif;
+}
+#call_to_action2 {
+  padding: 2px;
+  color: black;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.9em;
+}
