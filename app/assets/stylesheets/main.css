@@ -11,8 +11,8 @@ body {
   font-weight: 700;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Permanent Marker', cursive;
-  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
 }
 
 .my-navbar {
@@ -272,9 +272,7 @@ content: "\2014 \2009";
 }
 /*background: #ffffff url("img_tree.png") no-repeat right top;
     margin-right: 200px;*/
-.marketing-margin {
-  margin-top: 5%;
-}
+
 .email {
   margin: 5px;
 }
@@ -288,7 +286,7 @@ content: "\2014 \2009";
   color: white;
 }
 .email_box h2{
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Merriweather', serif;
   color: black;
   padding: 5px;
   margin-bottom: 0px;
@@ -365,9 +363,9 @@ content: "\2014 \2009";
   margin-top: 1%
 }
 .lead {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Merriweather', serif;
   padding: 10px;
-  font-size: 1em;
+  font-size: 0.85em;
 }
 p.lead {
   margin: 0px;
@@ -651,8 +649,11 @@ p.lead {
 .section-heading {
   margin-bottom: 10px;
 }
+.section-heading-mid {
+  margin-bottom: 0px;
+}
 .section-heading-c {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 .section-heading-spacer {
   float: left;
@@ -742,12 +743,12 @@ p.copyright {
   font-size: 1.8em;
   padding-top: 15px;
   color: black;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 #call_to_action2 {
   padding: 2px;
   color: black;
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Merriweather', serif;
   font-size: 0.9em;
 }
 @media(max-width:991px) {
