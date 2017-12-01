@@ -116,7 +116,15 @@ You could use :after - it doesn't really matter
     -o-filter: brightness(0.9);
     -ms-filter: brightness(0.9);*/
 }
-
+.marker h1 {
+  font-family: 'Permanent Marker', cursive;
+}
+.marker h4 {
+  font-family: 'Permanent Marker', cursive;
+}
+.marker h5 {
+  font-family: 'Permanent Marker', cursive;
+}
 /*.dark-cover {
   position: absolute;
 }
